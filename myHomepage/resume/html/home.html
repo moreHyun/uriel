@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../icon/faceIcon1.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link href="../style/nav.css" rel="stylesheet">
+    <link href="../style/home.css" rel="stylesheet">
+    <link href="../style/slide.css" rel="stylesheet">
+    
+    <style>
+    .btn_gotop {
+      display:none;
+      position:fixed;
+      bottom:30px;
+      right:30px;
+      z-index:999;
+      border:1px solid #ccc;
+      outline:none;
+      background-color:white;
+      color:#333;
+      cursor:pointer;
+      padding:15px 20px;
+      border-radius:100%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="../html/index.html">
+            <img src="../icon/faceIcon1.png" alt="faceicon" width="40" height="40"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/skill.html">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/project.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="wrap1">
+    <div class="introduce">
+      <h1 id="name">여다현</h1>
+      <h2 id="job">Software Engineer</h2>
+      <div class="dh-division-line"></div>
+      <div id="mail1" class="mail-tag">
+        <ol>
+          <ul>
+            <li><a class=mail2 href="mailto:public.manymorehyun@gmail.com" target="_blank">public.manymorehyun@gmail.com</a></li>
+            <li><a class=github2 href="https://github.com/moreHyun" target="_blank">Github</a></li>
+            <li><a class=blog2 href="https://manymorehyun.tistory.com/" target="_blank">Blog</a></li>
+          </ul>
+        </ol>
+      </div>
+    </div>
+
+    <p id="hi"><br>안녕하세요. 소프트웨어 엔지니어 여다현 입니다.</p>
+    <p id="hi2">개발자는 끊임없이 불편함을 느끼고 개선을 요구하는 과정을 담는 것이 가장 중요하다고 생각합니다.<br>
+    공부를 하며 그동안의 고민을 해결하기 위해 기술 세미나 등에 참석하여 최근 기술 동향에 대해 공부하고,<br>
+    사람들이 느끼는 불편함에 대해 고민했습니다.</p>
+    <p id="hi3">그 과정에서 팀원과 함께하는 프로젝트를 통해 협업을 하며 문제를 해결할 수 있고, 나에게 맞는 기술과 도구를 찾으려 노력했습니다.<br>
+    어떤 영역에서 전문성을 가지고 싶은 지에 대한 고민, 또 문제를 해결하며 얻는 고민 그것을 풀며 느끼는 뿌듯함 등을 통해 개발자에 대한 매력을 느낍니다.</p>
+
+    <div class="dh-division-line2"></div>
+    <h2 class="interests">📁 Interests</h2>
+
+    <div class="section">
+      <input type="radio" name="slide" id="slide01" checked>
+      <input type="radio" name="slide" id="slide02">
+      <input type="radio" name="slide" id="slide03">
+      <div class="slidewrap">
+        <ul class="slidelist">
+          <li>
+            <a>
+              <label for="slide03" class="left"></label>
+              <img src="../icon/jeon.jpeg">
+              <label for="slide02" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide01" class="left"></label>
+              <img src="../icon/drink.jpeg">
+              <label for="slide03" class="right"></label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="slide02" class="left"></label>
+              <img src="../icon/gogi.jpeg">
+              <label for="slide01" class="right"></label>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="instagram">
+      ✨ 소소하게 맛집 인스타그램을 하고 있습니다. 제 즐거움입니다.<br>
+      ✨ 틈이 날 때 어휘력을 잃지 않기 위해 독서를 합니다.<br>
+      ✨ 주로 인문사회학 서적을 읽습니다. 동기부여나 자극을 주는, 혹은 미래산업에 대한 책을 찾는 것을 좋아합니다.<br>
+      ✨ 드라마 보는 것을 좋아합니다. <br>
+      ✨ 최근 재미있게 본 드라마는 환혼, 더글로리이지만 사실 아포칼립스 물을 좋아하는 편입니다. 밥 먹으면서도 봅니다. <br>
+    </p>
+
+    
+      <footer class="footer">
+        <p color="silver" class="dh-footer">
+        Copyright ⓒ 2023 
+        <a href="../html/home.html" target="_blank" class="home2">여다현</a>
+         All rights reserved.
+        </p>
+        <nav>
+        <a href='https://cocoder.tistory.com' target='_blank'>
+          <img id="blog" src="../icon/티스토리-4.png"> Blog</a> |
+        <a href='https://github.com/moreHyun' target='_blank'>
+          <img id="github" src="../icon/git.png">Github</a>
+        </nav>
+
+        <a href="#" class="btn_gotop">
+          <span class="glyphicon glyphicon-chevron-up">^
+          </span>
+          <script>
+            $(window).scroll(function(){
+              if ($(this).scrollTop() > 300){
+                $('.btn_gotop').show();
+              } else{
+                $('.btn_gotop').hide();
+              }
+            });
+            $('.btn_gotop').click(function(){
+              $('html, body').animate({scrollTop:0},400);
+              return false;
+            });
+            </script>
+        </a>
+        
+      </footer>
+    </div>
+</body>
+</html>

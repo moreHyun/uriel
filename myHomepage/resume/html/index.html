@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../icon/faceIcon1.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <script>
+        function createSnow() {
+            const el = document.createElement("div");
+            el.classList.add('snow');
+            el.style.marginLeft = randomPositon() + 'px';
+            document.body.appendChild(el);
+        }
+        function randomPositon(){
+            return Math.floor(Math.random() * window.innerWidth);
+        }
+        for(let i = 0; i < 300; i++){
+            createSnow();
+        }
+    </script>
+
+    <div class="wrap">
+        <h1 class="faceicon"> 
+            <img src="../icon/faceIcon1.png"/>
+        </h1>
+        <p id="dynamic" class="lg-text">
+            
+        </p>
+        <p class="sm-text">MANYMOREHYUN | welCome !</p>
+        <nav>
+            <div class="getButton">
+            <a href="../html/home.html">Get Started</a>
+            </div>
+        </nav>
+    </div>
+    <script src="../static/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body */
+body{
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+}
+
+/* wrap 위치와 컬러 */
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+/* memoji 위치 */
+img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    text-align: center;
+}
+
+/* memoji 크기 */
+.faceicon{
+    height: 10rem;
+    width: 10rem; 
+}
+
+/* 큰 텍스트 폰트속성 */
+.lg-text{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 5px floralwhite;
+}
+
+/* 작은 텍스트 폰트 속성과 그라디언트 효과 */
+.sm-text{
+    font-size: 1.5rem;
+    background: linear-gradient(to right top, black, white);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 16px;
+}
+
+/* 메인 getButton 태그 (버튼 수정)*/
+.getButton{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.getButton:hover{
+    background-color: gray;
+}
+
+@media(max-width:769px){
+    .lg-text{
+        font-size: 1.5rem;
+    }
+    .sm-text{
+        font-size: 1rem;
+    }
+    .getButton{
+        font-size: 0.8rem;
+    }
+    .faceicon{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+/* 큰 텍스트에 커서 + 자동입력 효과 주기 */
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+
+#dynamic::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+#dynamic.active::after{
+    display: none;
+}
+
+/* main 화면 눈 내리는 효과 ! */
+.snow{
+    width: 3px;
+    height: 3px;
+    opacity: 0;
+    background: #fff;
+    border-radius: 50%;
+    animation: snow 10s linear infinite;
+}
+
+.snow:nth-of-type(2n) {
+    width: 5px;
+    height: 5px;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.snow:nth-of-type(2n + 1) {
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.snow:nth-of-type(9n) {
+    animation-duration: 15s;
+    animation-delay: 3s;
+}
+
+.snow:nth-of-type(3n + 1) {
+    animation-duration: 12s;
+    animation-delay: 4s;
+}
+
+@keyframes snow {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    20%{
+        opacity: 1;
+        transform: translate(-15px, 20vh);
+    }
+    40%{
+        opacity: 1;
+        transform: translateY(15px, 40vh);
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(-15px, 60vh);
+    }    
+    80%{
+        opacity: 1;
+        transform: translateY(0px, 80vh);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(100vh);
+    }
+}

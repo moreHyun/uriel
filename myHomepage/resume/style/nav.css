@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrap1 {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 19px;
+}
+
+.btn-outline-success{
+    color: silver !important;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
+
+footer {
+    display: block;
+	width: 100%;
+	height: 110px; /* 내용물에 따라 알맞는 값 설정 */
+	bottom: 0;
+    left: 0;
+    right: 0;
+	position: absolute;
+}
+
+footer {
+    background-color: white;
+    color: #2E2E2E;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+}
+
+footer p {
+    text-align: center;
+    color: #2E2E2E;
+    margin: 50px auto auto 0;
+    text-decoration-line: none;
+    letter-spacing: -1px;
+}
+
+footer nav {
+    text-align: center;
+    margin: 5px auto;
+    text-decoration-line: none;
+    letter-spacing: -1px;
+}
+
+#github{
+    width: 33px;
+    height: 33px;
+}
+
+#blog{
+    width: 20px;
+    height: 20px;
+}

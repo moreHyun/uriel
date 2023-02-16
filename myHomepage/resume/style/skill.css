@@ -1,0 +1,150 @@
+*{
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.skill-text {
+    text-align: center;
+    margin: 3rem auto;
+    letter-spacing: -1px;
+}
+
+.dh-division-line2 {
+    border-top: 1px solid #111111;
+    margin: 50px auto;
+    width: 1000px;
+}
+
+.charts {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+}
+.charts .chart {
+    margin: 0 20px;
+    position: relative;
+}
+.charts .chart h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.charts .chart svg {
+    width: 220px;
+    height: 220px;
+}
+circle {
+    fill: #ebebeb;
+    stroke-width: 20;
+    stroke-dasharray: 628;
+    stroke-dashoffset: 628;
+    /* animation: line 2s forwards; */
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-linecap: round;
+}
+/* @keyframes line {
+    from {stroke-dashoffset: 628;}
+    to {stroke-dashoffset: 0;}
+} */
+.charts .chart:nth-child(1) circle{
+    stroke: silver;
+}
+.charts .chart:nth-child(2) circle{
+    stroke: gray;
+}
+.charts .chart:nth-child(3) circle{
+    stroke: green;
+}
+.charts .chart:nth-child(4) circle{
+    stroke: darkgreen;
+}
+
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.license {
+    margin-bottom: 50px;
+    margin-top: 150px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.license-list {
+    letter-spacing: -1px;
+    text-align: center;
+    list-style: none;
+}
+
+.license-list li a {
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.history {
+    text-align: center;
+    margin: 100px auto 20px auto;
+    letter-spacing: -1px;
+}
+
+.timeline {
+    list-style: none;
+    letter-spacing: -1px;
+    display: block;
+    border: 1px solid white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline > li {
+    margin-bottom: 60px;
+}
+
+.timeline-date {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+
+    .timeline > li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .timeline-date {
+        width: 110px;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .timeline-content {
+        width: 75%;
+        float: left;
+        border-left: 3px solid white;
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    .timeline-content::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #6fc173;
+        position: absolute;
+        left: 106px;
+        top: 24px;
+        border-radius: 100%;
+        text-align: center;
+    }
+}
